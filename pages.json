@@ -1,0 +1,231 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+		    "path" : "pages/login/login",
+		    "style" : {
+				"navigationBarTitleText": "登录"
+			}
+		}
+		,
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		}
+	    ,{
+            "path" : "pages/profile/profile",
+            "style" : {
+				"navigationBarTitleText": "个人中心"
+			}
+        },
+		{
+            "path" : "pages/publish/publish",
+            "style" : {
+				"navigationBarTitleText": "校园圈"
+			}
+        }
+        ,{
+            "path" : "pages/schoolCalendar/schoolCalendar",
+				"style" : {
+					"navigationBarTitleText": "东大校历"
+				}
+        }
+        ,{
+            "path" : "pages/schoolMap/schoolMap",
+            "style" : {
+				"navigationBarTitleText": "东大地图"
+			}
+        }
+        ,{
+            "path" : "pages/repairPhone/repairPhone",
+            "style" : {
+				"navigationBarTitleText": "后勤电话"
+			}
+        }
+        ,{
+            "path" : "pages/schoolCommunity/schoolCommunity",
+            "style" : {
+				"navigationBarTitleText": "社团一览"
+			}
+        }
+        ,{
+            "path" : "pages/myCourse/myCourse",
+            "style" : {
+				"navigationBarTitleText": "我的课表"
+			}
+        }
+        ,{
+            "path" : "pages/schoolGrades/schoolGrades",
+            "style" : {
+				"navigationBarTitleText": "在校成绩"
+			}
+        }
+        ,{
+            "path" : "pages/gradeExamination/gradeExamination",
+            "style" : {
+				"navigationBarTitleText": "等级考试"
+			}
+        }
+        ,{
+            "path" : "pages/gradesTable/gradesTable",
+            "style" : {
+				"navigationBarTitleText": "成绩单"
+			}
+        }
+        ,{
+            "path" : "pages/secondHand/secondHand",
+            "style" : {
+				"navigationBarTitleText": "二手市场"
+			}
+        }
+        ,{
+            "path" : "pages/secondHandPub/secondHandPub",
+            "style" : {
+				"navigationBarTitleText": "二手发布"
+			}
+        }
+        ,{
+            "path" : "pages/lostAndFound/lostAndFound",
+            "style" : {
+				"navigationBarTitleText": "失物招领"
+			}
+        }
+        ,{
+            "path" : "pages/lostAndFoundPub/lostAndFoundPub",
+            "style" : {
+				"navigationBarTitleText": "发布"
+			}
+        }
+        ,{
+            "path" : "pages/secondHandDetail/secondHandDetail",
+            "style" : {
+				"navigationBarTitleText": "详情"
+			}
+        }
+        ,{
+            "path" : "pages/carpoolingTravel/carpoolingTravel",
+            "style" : {
+				"navigationBarTitleText": "拼车出行"
+			}
+        }
+        ,{
+            "path" : "pages/carpoolingTravelPub/carpoolingTravelPub",
+            "style" : {
+				"navigationBarTitleText": "拼车发布"
+			}
+        }
+        ,{
+            "path" : "pages/runningServices/runningServices",
+            "style" : {
+				"navigationBarTitleText": "代大厅"
+			}
+        }
+        ,{
+            "path" : "pages/runningServicesPub/runningServicesPub",
+            "style" : {
+				"navigationBarTitleText": "代发布"
+			}
+        }
+        ,{
+            "path" : "pages/rentHouse/rentHouse",
+            "style" : {
+				"navigationBarTitleText": "房源大厅"
+			}
+        }
+        ,{
+            "path" : "pages/rentHousePub/rentHousePub",
+            "style" : {
+				"navigationBarTitleText": "房源发布"
+			}
+        }
+        ,{
+            "path" : "pages/rentHouseDetail/rentHouseDetail",
+            "style" : {
+				"navigationBarTitleText": "房源详情"
+			}
+        }
+        ,{
+            "path" : "pages/myEsxzPub/myEsxzPub",
+            "style" : {
+				"navigationBarTitleText": "我的发布"
+			}
+        }
+        ,{
+            "path" : "pages/mySwzlPub/mySwzlPub",
+            "style" : {
+				"navigationBarTitleText": "我的发布"
+			}
+        }
+        ,{
+            "path" : "pages/myPccxPub/myPccxPub",
+            "style" : {
+				"navigationBarTitleText": "我的发布"
+			}
+        }
+        ,{
+            "path" : "pages/myZfhzPub/myZfhzPub",
+            "style" : {
+				"navigationBarTitleText": "我的发布"
+			}
+        }
+        ,{
+            "path" : "pages/aboutUs/aboutUs",
+            "style" : {
+				"navigationBarTitleText": "关于我们"
+			}
+        }
+        ,{
+            "path" : "pages/feedback/feedback",
+            "style" : {
+				"navigationBarTitleText": "意见反馈"
+			}
+        }
+        ,{
+            "path" : "pages/myCollection/myCollection",
+            "style" : {
+				"navigationBarTitleText": "我的收藏"
+			}
+        }
+        ,{
+            "path" : "pages/myDqfwPub/myDqfwPub",
+            "style" : {
+				"navigationBarTitleText": "我的发布"
+			}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "DH生活帮",
+		"navigationBarBackgroundColor": "#CC9999",
+		"backgroundColor": "#CC9999"
+	},
+	"tabBar":{
+			"color": "#7A7E83",
+		    "selectedColor": "#CC9999",
+		    "borderStyle": "black",
+		    "backgroundColor": "#ffffff",
+		    "list": [{
+		        "pagePath": "pages/index/index",
+		        "iconPath": "static/fonts/tabbar/index.png",
+		        "selectedIconPath": "static/fonts/tabbar/index-activate.png",
+		        "text": "首页"
+		    }, {
+		        "pagePath": "pages/myCourse/myCourse",
+		        "iconPath": "static/fonts/tabbar/course.png",
+		        "selectedIconPath": "static/fonts/tabbar/course-activate.png",
+		        "text": "我的课表"
+		    }, {
+		        "pagePath": "pages/publish/publish",
+		        "iconPath": "static/fonts/tabbar/publish.png",
+		        "selectedIconPath": "static/fonts/tabbar/publish-activate.png",
+		        "text": "生活圈"
+		    },
+			{
+				"pagePath": "pages/profile/profile",
+				"iconPath": "static/fonts/tabbar/login.png",
+				"selectedIconPath": "static/fonts/tabbar/login-activate.png",
+				"text": "个人中心"
+			}]
+	}
+}

@@ -1,0 +1,27 @@
+
+.yjfk.data-v-91bba7b4 {
+  padding-top: 25rpx;
+  background-color: #e3e3e3;
+  height: 100vh;
+}
+.yjfk text.data-v-91bba7b4 {
+  color: #AAAAAA;
+  margin-left: 20rpx;
+}
+.yjfk textarea.data-v-91bba7b4 {
+  width: 96%;
+  margin: 25rpx auto;
+  height: 300rpx;
+  border: 1px solid #F1F1F1;
+  -webkit-border-radius: 10rpx;
+          border-radius: 10rpx;
+  padding-left: 10rpx;
+  padding-top: 10rpx;
+  background-color: #fff;
+}
+.yjfk button.data-v-91bba7b4 {
+  width: 90%;
+  margin-top: 40rpx;
+}
+
+

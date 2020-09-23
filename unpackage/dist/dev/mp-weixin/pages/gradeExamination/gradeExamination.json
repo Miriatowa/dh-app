@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "等级考试",
+  "usingComponents": {
+    "jyf-parser": "/components/jyf-parser/jyf-parser"
+  }
+}

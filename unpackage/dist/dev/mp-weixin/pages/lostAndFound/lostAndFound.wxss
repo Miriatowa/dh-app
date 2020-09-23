@@ -1,0 +1,88 @@
+
+.index{
+	background-color: #F1F1F1;
+	height: 100vh;
+}
+.tabbar{
+	height: 80rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	background-color: #CC9999;
+}
+.isSelect{
+	color: #FFFFFF;
+	border-bottom: 4rpx solid #FFFFFF;
+	margin: 12rpx 20rpx;
+	font-size: 34rpx;
+	font-weight: 500;
+}
+.noSelect{
+	color: #FFFFFF;
+	font-size: 28rpx;
+	margin: 18rpx 20rpx;
+}
+.addBtn{
+	color: #CC9999;
+	font-size: 100rpx;
+	position: fixed;
+	right: 0;
+	bottom: 50rpx;
+}
+.lostItem{
+	width: 94%;
+	background-color: #FFFFFF;
+	margin: 20rpx auto;
+	-webkit-border-radius: 20rpx;
+	        border-radius: 20rpx;
+}
+.lostTop{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	height: 80rpx;
+	margin: 0rpx 20rpx;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	border-bottom: 2rpx solid #F1F1F1;
+}
+.lostName{
+	font-size: 34rpx;
+}
+.lostMid{
+	margin: 20rpx 10rpx;
+	font-size: 28rpx;
+}
+.lostMidTitle{
+	
+	font-weight: bold;
+	margin-bottom: 10rpx;
+}
+.lostBottom{
+	padding-bottom: 20rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+.contact{
+	margin-left: 10rpx;
+	font-size: 26rpx;
+	color: #808080;
+}
+.time{
+	margin-right: 20rpx;
+	font-size: 26rpx;
+	color: #808080;
+	margin-top: 16rpx;
+}
+

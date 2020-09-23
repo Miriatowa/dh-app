@@ -1,0 +1,89 @@
+
+.itemTop{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	padding: 0rpx 20rpx;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	height: 80rpx;
+	font-size: 26rpx;
+	border-bottom: 10rpx solid #F1F1F1;
+}
+.bottomBar{
+	background-color: rgb(255,255,255,0.6);
+	height: 120rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	padding: 0 18rpx;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.cancelBtn{
+	margin-left: 400rpx;
+	width: 180rpx;
+	font-size: 26rpx;
+}
+.billItem{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	margin-left: 10rpx;
+}
+.zfItem{
+	background-color: #FFFFFF;
+	width: 100%;
+	border-bottom: 2rpx solid #F1F1F1;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	padding-bottom: 30rpx;
+	padding-top: 30rpx;
+}
+.zfTitle{
+	font-weight: bold;
+	padding: 10rpx 40rpx;
+}
+.zfAddress{
+	padding: 10rpx 40rpx;
+	color: #808080;
+	font-size: 26rpx;
+}
+.zfContact{
+	padding: 10rpx 40rpx;
+	color: #808080;
+	font-size: 26rpx;
+}
+.zfPrice{
+	color: #ff6633;
+	font-weight: bold;
+	margin-right: 20rpx;
+}
+.zfTime{
+	padding: 10rpx 40rpx;
+	font-size: 26rpx;
+	color: #808080;
+}
+

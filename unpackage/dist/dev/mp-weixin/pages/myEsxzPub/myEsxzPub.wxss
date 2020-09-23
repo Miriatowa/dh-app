@@ -1,0 +1,97 @@
+
+.storeCollection{
+	border-top: 4rpx solid #E3E3E3;
+}
+.goodsCollection{
+	color: #808080;
+	height: 100vh;
+	background-color: #E3E3E3;
+}
+.itemTop{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	padding: 0rpx 20rpx;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	height: 80rpx;
+	font-size: 26rpx;
+	border-bottom: 10rpx solid #F1F1F1;
+}
+.billItem{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	margin-bottom: 16rpx;
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #e5e5e5;
+	margin-left: 10px;
+	margin-top: 20rpx;
+	overflow: hidden;
+	color: #808080;
+}
+.bottomBar{
+	background-color: rgb(255,255,255,0.6);
+	height: 120rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	padding: 0 18rpx;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.cancelBtn{
+	margin-left: 400rpx;
+	width: 180rpx;
+	font-size: 26rpx;
+}
+.itemName{
+	margin-top: 8rpx;
+	font-size: 30rpx;
+	font-weight: bold;
+	color: #505050;
+	line-height: 50rpx;
+}
+.itemNum{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	margin-top: 40rpx;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.itemPrice{
+	color: #fa4b22;
+	font-weight: 400;
+}
+.itemNumber{
+		margin-left: 300rpx;
+}
+.goodsImg{
+	width: 140rpx;
+	height: 140rpx;
+	-webkit-border-radius: 10rpx;
+	        border-radius: 10rpx;
+	margin-right: 10rpx;
+	border: 2rpx solid #ccc;
+}
+

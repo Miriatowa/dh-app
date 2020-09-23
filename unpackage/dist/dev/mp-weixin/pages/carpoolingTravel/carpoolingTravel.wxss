@@ -1,0 +1,139 @@
+
+.tabbar{
+	height: 80rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	background-color: #CC9999;
+}
+.isSelect{
+	color: #FFFFFF;
+	border-bottom: 4rpx solid #FFFFFF;
+	margin: 12rpx 20rpx;
+	font-size: 34rpx;
+	font-weight: 500;
+}
+.noSelect{
+	color: #FFFFFF;
+	font-size: 28rpx;
+	margin: 18rpx 20rpx;
+}
+.uni-list{
+		background-color: #CC9999;
+		width: 100%;
+		height: 100rpx;
+}
+.car_share .search_nav navigator {
+  height: 100%;
+  background-color: #fff;
+  -webkit-border-radius: 10rpx;
+          border-radius: 10rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.car_share .top_swiper swiper image {
+  height: calc( 100vw / 1.6 );
+  width: 100%;
+}
+.car_share .mid_content {
+  width: 100%;
+  margin-top: 20rpx;
+}
+.car_share .mid_content .pub_content {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid #e9e9e9;
+  margin-bottom: 20rpx;
+}
+.car_share .mid_content .pub_content .pub_top {
+  padding-left: 35rpx;
+}
+.car_share .mid_content .pub_content .pub_top .pub_place {
+  position: relative;
+}
+.car_share .mid_content .pub_content .pub_top .pub_place view {
+  margin-top: 30rpx;
+}
+.car_share .mid_content .pub_content .pub_top .pub_place view ._span {
+  color: #CC9999;
+  margin-right: 10rpx;
+}
+.car_share .mid_content .pub_content .pub_top .pub_type {
+  position: relative;
+  width: 160rpx;
+  height: 50rpx;
+  text-align: center;
+  line-height: 50rpx;
+  font-size: 24rpx;
+  left: 58vw;
+  top: -100rpx;
+  background-color: #CC9999;
+  color: white;
+  -webkit-border-radius: 10rpx;
+          border-radius: 10rpx;
+}
+.car_share .mid_content .pub_content .pub_mid {
+  border-top: 1px solid #e9e9e9;
+  padding-left: 35rpx;
+}
+.car_share .mid_content .pub_content .pub_mid .pub_time {
+  margin-top: 20rpx;
+}
+.car_share .mid_content .pub_content .pub_mid .pub_time ._span {
+  margin-right: 30rpx;
+}
+.car_share .mid_content .pub_content .pub_mid .pub_contact {
+  margin-top: 20rpx;
+}
+.car_share .mid_content .pub_content .pub_mid .pub_con {
+  margin-top: 20rpx;
+}
+.car_share .mid_content .pub_content .pub_mid .pub_con ._span {
+  margin-right: 20rpx;
+}
+.car_share .mid_content .pub_content .pub_bot {
+  margin-top: 40rpx;
+  margin-bottom: 20rpx;
+  padding-left: 35rpx;
+  position: relative;
+}
+.car_share .mid_content .pub_content .pub_bot .pub_tip {
+  font-size: 24rpx;
+}
+.car_share .mid_content .pub_content .pub_bot .pub_tip ._span {
+  font-size: 30rpx;
+  color: orangered;
+}
+.car_share .mid_content .pub_content .pub_bot .pub_btn {
+  position: absolute;
+  left: 475rpx;
+  bottom: 0rpx;
+  height: 50rpx;
+  width: 160rpx;
+  text-align: center;
+  line-height: 50rpx;
+  -webkit-border-radius: 10rpx;
+          border-radius: 10rpx;
+  color: #CC9999;
+  border: 1px solid #CC9999;
+}
+.car_share .bot_add .iconfont {
+  position: fixed;
+  right: 0;
+  top: 40vh;
+}
+.addBtn{
+	color: #CC9999;
+	font-size: 100rpx;
+	position: fixed;
+	right: 0;
+	bottom: 50rpx;
+}
+

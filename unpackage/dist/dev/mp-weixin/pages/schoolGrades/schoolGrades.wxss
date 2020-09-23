@@ -1,0 +1,7 @@
+
+.queryBtn{
+	width: 90%;
+	margin-top: 100rpx;
+	margin-bottom: 50rpx;
+}
+

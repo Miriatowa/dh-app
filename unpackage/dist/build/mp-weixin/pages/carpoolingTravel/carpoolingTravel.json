@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "拼车出行",
+  "usingComponents": {
+    "search": "/components/search"
+  }
+}

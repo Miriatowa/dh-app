@@ -1,0 +1,138 @@
+
+.itemTop{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	padding: 0rpx 20rpx;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	height: 80rpx;
+	font-size: 26rpx;
+}
+.billItem{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	margin-left: 10rpx;
+}
+.bottomBar{
+	background-color: rgb(255,255,255,0.6);
+	height: 120rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	padding: 0 18rpx;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.cancelBtn{
+	margin-left: 400rpx;
+	width: 180rpx;
+	font-size: 26rpx;
+}
+.pub_content {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid #e9e9e9;
+  margin-bottom: 20rpx;
+}
+.pub_content .pub_top {
+  padding-left: 35rpx;
+}
+.pub_content .pub_top .pub_place {
+  position: relative;
+}
+.pub_content .pub_top .pub_place view {
+  margin-top: 30rpx;
+}
+.pub_content .pub_top .pub_place view ._span {
+  color: #CC9999;
+  margin-right: 10rpx;
+}
+.pub_content .pub_top .pub_type {
+  position: relative;
+  width: 160rpx;
+  height: 50rpx;
+  text-align: center;
+  line-height: 50rpx;
+  font-size: 24rpx;
+  left: 58vw;
+  top: -100rpx;
+  background-color: #CC9999;
+  color: white;
+  -webkit-border-radius: 10rpx;
+          border-radius: 10rpx;
+}
+.pub_content .pub_mid {
+  border-top: 1px solid #e9e9e9;
+  padding-left: 35rpx;
+}
+.pub_content .pub_mid .pub_time {
+  margin-top: 20rpx;
+}
+.pub_content .pub_mid .pub_time ._span {
+  margin-right: 30rpx;
+}
+.pub_content .pub_mid .pub_contact {
+  margin-top: 20rpx;
+}
+.pub_content .pub_mid .pub_con {
+  margin-top: 20rpx;
+}
+.pub_content .pub_mid .pub_con ._span {
+  margin-right: 20rpx;
+}
+.pub_content .pub_bot {
+  margin-top: 40rpx;
+  margin-bottom: 20rpx;
+  padding-left: 35rpx;
+  position: relative;
+}
+.pub_content .pub_bot .pub_tip {
+  font-size: 24rpx;
+}
+.pub_content .pub_bot .pub_tip ._span {
+  font-size: 30rpx;
+  color: orangered;
+}
+.pub_content .pub_bot .pub_btn {
+  position: absolute;
+  left: 475rpx;
+  bottom: 0rpx;
+  height: 50rpx;
+  width: 160rpx;
+  text-align: center;
+  line-height: 50rpx;
+  -webkit-border-radius: 10rpx;
+          border-radius: 10rpx;
+  color: #CC9999;
+  border: 1px solid #CC9999;
+}
+.car_share .bot_add .iconfont {
+  position: fixed;
+  right: 0;
+  top: 40vh;
+}
+.addBtn{
+	color: #CC9999;
+	font-size: 100rpx;
+	position: fixed;
+	right: 0;
+	bottom: 50rpx;
+}
+

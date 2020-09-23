@@ -1,0 +1,1 @@
+<view><view class="content"><image src="{{mapArr[0]}}" mode="widthFix" data-event-opts="{{[['tap',[['onPreview',['$event']]]]]}}" bindtap="__e"></image><view class="tips">地图在手，东湖我有^_^</view></view></view>

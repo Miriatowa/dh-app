@@ -1,0 +1,21 @@
+
+.queryBtn{
+	width: 90%;
+	margin-top: 100rpx;
+	margin-bottom: 50rpx;
+}
+.datelist{
+	border-collapse: collapse;
+	width: 96%;
+	margin: 0px auto;
+	background-color: ;
+}
+.title{
+	margin-bottom: 30rpx;
+	font-weight: bold;
+	color: #CC9999;
+	margin-left: 35%;
+}
+
+
+

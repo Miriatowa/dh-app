@@ -1,0 +1,33 @@
+
+.tabbar{
+	height: 100rpx;
+	line-height: 100rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: space-around;
+	        justify-content: space-around;
+}
+.isSelect{
+	color: #CC9999;
+	border-bottom: 4rpx solid #CC9999;
+}
+.noSelect{
+	color: #808080;
+}
+.content{
+	background-color: #F1F1F1;
+	height: calc(100vh - 100rpx );
+}
+.content image{
+	width: 90%;
+	margin: 20% 5%;
+}
+.tips{
+	color: #808080;
+	font-size: 26rpx;
+	position: fixed;
+	left: 20%;
+	bottom: 10%;
+}
+

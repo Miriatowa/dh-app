@@ -1,0 +1,64 @@
+
+.tabbar{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	background-color: #F1F1F1;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-justify-content: space-around;
+	        justify-content: space-around;
+	color: #808080;
+}
+.isSelect{
+	height: 80rpx;
+	line-height: 80rpx;
+	color: #CC9999;
+	border-bottom: 2rpx solid #CC9999;
+}
+.item{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	border-bottom: 10rpx solid #F1F1F1;
+	padding: 10rpx;
+}
+.itemLeft{
+	width: 200rpx;
+	height: 200rpx;
+	-webkit-border-radius: 10rpx;
+	        border-radius: 10rpx;
+}
+.itemRight{
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	        flex: 1;
+	margin-left: 20rpx;
+	margin-top: 16rpx;
+}
+.itemTitle{
+	font-size: 34rpx;
+	font-weight: bold;
+}
+.itemPro{
+	color: #808080;
+	font-size: 26rpx;
+	margin-top: 20rpx;
+}
+.itemBot{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+.itemBtn{
+	/* margin-left: 300rpx; */
+	width: 205rpx;
+	height: 80rpx;
+	line-height: 80rpx;
+	font-size: 26rpx;
+}
+

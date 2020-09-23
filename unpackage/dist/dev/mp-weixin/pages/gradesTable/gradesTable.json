@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "成绩单",
+  "usingComponents": {
+    "jyf-parser": "/components/jyf-parser/jyf-parser"
+  }
+}

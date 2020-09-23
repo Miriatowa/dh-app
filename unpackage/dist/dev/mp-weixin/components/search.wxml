@@ -1,0 +1,1 @@
+<view class="container"><view class="iconfont icon-tubiao- find _i"></view><input class="bar" placeholder="请输入关键字..." placeholder-class="in-bar" data-event-opts="{{[['tap',[['onInput',['$event']]]]]}}" bindtap="__e"/><icon class="iconfont icon-saomiao camera"></icon></view>

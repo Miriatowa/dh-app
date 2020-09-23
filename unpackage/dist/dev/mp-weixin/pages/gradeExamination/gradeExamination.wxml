@@ -1,0 +1,1 @@
+<view><button class="queryBtn" type="primary" data-event-opts="{{[['tap',[['queryScore',['$event']]]]]}}" bindtap="__e">点击查询</button><view hidden="{{!isShow}}"><view class="title">等级考试成绩</view><jyf-parser class="vue-ref" vue-id="1903f900-1" html="{{nodes}}" tag-style="{{tagStyle}}" autoscroll="{{true}}" data-ref="article" bind:__l="__l"></jyf-parser></view></view>

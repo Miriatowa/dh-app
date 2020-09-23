@@ -1,0 +1,11 @@
+
+.item{
+	border-bottom: 2rpx solid #F1F1F1;
+	padding: 20rpx;
+}
+.itemContent{
+	color: #808080;
+	font-size: 26rpx;
+	margin-top: 20rpx;
+}
+

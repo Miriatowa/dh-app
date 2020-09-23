@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "校园圈",
+  "usingComponents": {
+    "order-mask": "/components/mask",
+    "search": "/components/search"
+  }
+}

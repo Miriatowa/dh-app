@@ -1,0 +1,155 @@
+
+.index{
+	background-color: #F1F1F1;
+	height: 100vh;
+}
+.tabbar{
+	height: 80rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	background-color: #CC9999;
+}
+.isSelect{
+	color: #FFFFFF;
+	border-bottom: 4rpx solid #FFFFFF;
+	margin: 12rpx 20rpx;
+	font-size: 34rpx;
+	font-weight: 500;
+}
+.noSelect{
+	color: #FFFFFF;
+	font-size: 28rpx;
+	margin: 18rpx 20rpx;
+}
+.addBtn{
+	color: #CC9999;
+	font-size: 100rpx;
+	position: fixed;
+	right: 0;
+	bottom: 50rpx;
+}
+.zfhzContent{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	-webkit-justify-content: space-around;
+	        justify-content: space-around;
+}
+.item{
+	background-color: #FFFFFF;
+	width: 360rpx;
+	-webkit-border-radius: 14rpx;
+	        border-radius: 14rpx;
+	margin-top: 10rpx;
+}
+.goodsItem{
+	margin: 10rpx 20rpx;
+}
+.itemImage image{
+	margin-top: 20rpx;
+	width: 320rpx;
+	height: 320rpx;
+	-webkit-border-radius: 20rpx;
+	        border-radius: 20rpx;
+}
+.content{
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	        flex: 1;
+}
+.contentTop{
+	margin-top: 10rpx;
+}
+.title{
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	font-weight: bold;
+	margin-left: 6rpx;
+}
+.houseAddress{
+	font-size: 26rpx;
+	color: #808080;
+}
+.saleDetailBottom{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	height: 60rpx;
+}
+.price{
+	color: #ff6633;
+	font-weight: bold;
+	line-height: 60rpx;
+}
+.saleNum{
+	font-size: 24rpx;
+	color: #808080;
+	margin-left: 5rpx;
+}
+.moreDetail{
+	font-size: 22rpx;
+	color: #CCCCCC;
+	line-height: 60rpx;
+}
+.zfNumber{
+	margin-top: 10rpx;
+	background-color: #FFFFFF;
+	width: 100%;
+	height: 80rpx;
+	line-height: 80rpx;
+	padding: 0 40rpx;
+	border-bottom: 1px solid #eee;
+	font-size: 28rpx;
+}
+.zfItem{
+	background-color: #FFFFFF;
+	width: 100%;
+	border-bottom: 2rpx solid #F1F1F1;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	padding-bottom: 30rpx;
+	padding-top: 30rpx;
+}
+.zfTitle{
+	font-weight: bold;
+	padding: 10rpx 40rpx;
+}
+.zfAddress{
+	padding: 10rpx 40rpx;
+	color: #808080;
+	font-size: 26rpx;
+}
+.zfContact{
+	padding: 10rpx 40rpx;
+	color: #808080;
+	font-size: 26rpx;
+}
+.zfPrice{
+	color: #ff6633;
+	font-weight: bold;
+	margin-right: 20rpx;
+}
+.zfTime{
+	padding: 10rpx 40rpx;
+	font-size: 26rpx;
+	color: #808080;
+}
+

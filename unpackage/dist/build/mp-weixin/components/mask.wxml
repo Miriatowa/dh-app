@@ -1,0 +1,1 @@
+<view class="modal" style="{{'top:'+(maskShow.topDis+'rpx')+';'}}" hidden="{{!maskShow.isSelect}}"><view class="panel" style="{{'top:'+(maskShow.topDis+'rpx')+';'}}"><slot name="modal-content"></slot></view></view>

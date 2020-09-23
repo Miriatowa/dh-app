@@ -1,0 +1,9 @@
+
+.title{
+	margin-bottom: 30rpx;
+	margin-top: 10rpx;
+	font-weight: bold;
+	color: #CC9999;
+	margin-left: 44%;
+}
+
