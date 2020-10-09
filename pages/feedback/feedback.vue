@@ -25,7 +25,7 @@
 					key:"uid",
 					success:(res)=> {
 							uni.request({
-								url:'http://127.0.0.1:8000/api/postYjfkData',
+								url:'http://58.87.94.58:4000/api/postYjfkData',
 								method:"POST",
 								data:{
 									yjfk_content:this.content,

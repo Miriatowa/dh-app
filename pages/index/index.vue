@@ -72,7 +72,7 @@
 			}
 		},
 		onLoad() {
-
+			
 		},
 		methods: {
 

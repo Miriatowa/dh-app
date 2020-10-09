@@ -74,8 +74,8 @@
 		onLoad(options){
 			console.log(options.id)
 			uni.request({
-				url:'http://127.0.0.1:8000/api/queryZfhzDeatilData',
-				method:"POST",
+				url:'http://58.87.94.58:4000/api/queryZfhzDeatilData',
+				method:"GET",
 				data:{
 					houseId:options.id
 				},

@@ -51,8 +51,8 @@
 		},
 		onLoad(){
 					uni.request({
-						url:'http://127.0.0.1:8000/api/queryEsxzData',
-						method:"POST",
+						url:'http://58.87.94.58:4000/api/queryEsxzData',
+						method:"GET",
 						data:{
 							goodsType:"生活用品"
 						},
@@ -69,8 +69,8 @@
 				this.typeIndex=e.currentTarget.dataset.index
 				console.log(e.currentTarget.dataset.index)
 				uni.request({
-					url:'http://127.0.0.1:8000/api/queryEsxzData',
-					method:"POST",
+					url:'http://58.87.94.58:4000/api/queryEsxzData',
+					method:"GET",
 					data:{
 						goodsType:this.goodsTypeArr[this.typeIndex]
 					},
@@ -83,14 +83,11 @@
 				
 			},
 			toPublish(){
-				console.log("111")
 				uni.navigateTo({
 					url:"../secondHandPub/secondHandPub"
 				})
 			},
 			toDetail(e){
-				console.log(e)
-				// e.currentTarget.dataset.index
 				uni.navigateTo({
 					url:`../secondHandDetail/secondHandDetail?id=${e.currentTarget.dataset.index}`
 				})

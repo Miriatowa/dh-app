@@ -60,8 +60,8 @@
 				success: (res) => {
 					this.uid=res.data
 					uni.request({
-						url:'http://127.0.0.1:8000/api/queryMyEsxzCollectionData',
-						method:"POST",
+						url:'http://58.87.94.58:4000/api/queryMyEsxzCollectionData',
+						method:"GET",
 						data:{
 							userId:this.uid
 						},
@@ -123,7 +123,7 @@
 			onCancelCollection(){
 				console.log(this.cancelId)
 				uni.request({
-					url:"http://127.0.0.1:8000/api/deleteMyEsxzCollectionData",
+					url:"http://58.87.94.58:4000/api/deleteMyEsxzCollectionData",
 					method:"POST",
 					data:{
 						userId: this.uid,

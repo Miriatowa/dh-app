@@ -11,9 +11,9 @@
 /* 9 */,
 /* 10 */,
 /* 11 */
-/*!********************************************************************!*\
-  !*** D:/JAVA/web前端/DH生活通/main.js?{"page":"pages%2Flogin%2Flogin"} ***!
-  \********************************************************************/
+/*!*************************************************************************!*\
+  !*** D:/git远程仓库/dh校园助手/dh-app/main.js?{"page":"pages%2Flogin%2Flogin"} ***!
+  \*************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -26,9 +26,9 @@ createPage(_login.default);
 
 /***/ }),
 /* 12 */
-/*!*************************************************!*\
-  !*** D:/JAVA/web前端/DH生活通/pages/login/login.vue ***!
-  \*************************************************/
+/*!******************************************************!*\
+  !*** D:/git远程仓库/dh校园助手/dh-app/pages/login/login.vue ***!
+  \******************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -66,9 +66,9 @@ component.options.__file = "pages/login/login.vue"
 
 /***/ }),
 /* 13 */
-/*!********************************************************************************!*\
-  !*** D:/JAVA/web前端/DH生活通/pages/login/login.vue?vue&type=template&id=b237504c& ***!
-  \********************************************************************************/
+/*!*************************************************************************************!*\
+  !*** D:/git远程仓库/dh校园助手/dh-app/pages/login/login.vue?vue&type=template&id=b237504c& ***!
+  \*************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -87,9 +87,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 /* 14 */
-/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!D:/JAVA/web前端/DH生活通/pages/login/login.vue?vue&type=template&id=b237504c& ***!
-  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!D:/git远程仓库/dh校园助手/dh-app/pages/login/login.vue?vue&type=template&id=b237504c& ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -113,9 +113,9 @@ render._withStripped = true
 
 /***/ }),
 /* 15 */
-/*!**************************************************************************!*\
-  !*** D:/JAVA/web前端/DH生活通/pages/login/login.vue?vue&type=script&lang=js& ***!
-  \**************************************************************************/
+/*!*******************************************************************************!*\
+  !*** D:/git远程仓库/dh校园助手/dh-app/pages/login/login.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -128,9 +128,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 /* 16 */
-/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!D:/JAVA/web前端/DH生活通/pages/login/login.vue?vue&type=script&lang=js& ***!
-  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!D:/git远程仓库/dh校园助手/dh-app/pages/login/login.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -154,16 +154,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 var userInfo = '';
 var loginCode = '';
-var jwxtId = "17101010105";
-var jwxtPwd = "2608782676.";
-var jwxtCode = "";
-// var idNum="17101010105"
-// var pwd="2608782676."
-// var code=""
-var _default = {
+var jwxtId = "";
+var jwxtPwd = "";
+var jwxtCode = "";var _default =
+{
   data: function data() {
     return {
       codeUrl: '' };
@@ -172,8 +170,7 @@ var _default = {
   onLoad: function onLoad() {
     var that = this;
     uni.request({
-      // url:"http://58.87.94.58",
-      url: 'http://127.0.0.1:80/api/getCode',
+      url: 'http://58.87.94.58:4000/api/getCode',
       success: function success(res) {
         console.log(res);
         that.codeUrl = "data:image/JPG;base64," + res.data;
@@ -183,15 +180,44 @@ var _default = {
   methods: {
     onIdCard: function onIdCard(e) {
       jwxtId = e.detail.value;
-      // idNum=e.detail.value
     },
     onPassWord: function onPassWord(e) {
       jwxtPwd = e.detail.value;
-      // pwd=e.detail.value
     },
     onCode: function onCode(e) {
       jwxtCode = e.detail.value;
-      // code=e.detail.value
+    },
+    onSubmit: function onSubmit() {
+      console.log("111");
+      uni.request({
+        url: "http://58.87.94.58:4000/api/login",
+        method: 'POST',
+        data: {
+          jwxtId: jwxtId,
+          jwxtPwd: jwxtPwd,
+          jwxtCode: jwxtCode },
+
+        success: function success(res) {
+          if (res.statusCode == 200) {
+            uni.switchTab({
+              url: "../index/index" });
+
+
+          } else {
+            uni.showModal({
+              title: "提示",
+              content: "用户名或者密码错误",
+              success: function success(res) {
+                uni.redirectTo({
+                  url: "../login/login" });
+
+              } });
+
+
+          }
+          uni.hideLoading();
+        } });
+
     },
     // 登录
     getUseInfo: function getUseInfo() {
@@ -200,7 +226,10 @@ var _default = {
         provider: 'weixin',
         success: function success(res) {
           userInfo = res.userInfo;
-          console.log(userInfo);
+          uni.setStorage({
+            key: 'nickName',
+            data: userInfo.nickName });
+
           uni.showLoading({
             title: '登录中...' });
 
@@ -212,7 +241,7 @@ var _default = {
               console.log(loginCode);
               //2.将用户登录code传递到后台置换用户SessionKey、OpenId等信息
               uni.request({
-                url: "http://127.0.0.1:80/api/login",
+                url: "http://58.87.94.58:4000/api/login",
                 method: 'POST',
                 data: {
                   jwxtId: jwxtId,
@@ -223,7 +252,6 @@ var _default = {
 
 
                 success: function success(res) {
-                  console.log(res);
                   if (res.statusCode == 200) {
                     uni.setStorage({
                       key: 'uid',
@@ -254,41 +282,14 @@ var _default = {
 
         } });
 
-    }
-    // 	getUseInfo(){
-    // 		console.log(idNum)
-    // 		console.log(pwd)
-    // 		console.log(code)
-    // 	uni.request({
-    // 		url:"http://127.0.0.1:8000/api/register",
-    // 		method:"POST",
-    // 		data:{
-    // 			idNum,
-    // 			pwd,
-    // 			code,
-    // 		},
-    // 		success: (res) => {
-    // 			if(res.data == "登录成功..."){
-    // 				uni.switchTab({
-    // 					url:"../index/index"
-    // 				})
-    // 			}
-    // 			if(res.data == "登录失败..."){
-    // 				uni.redirectTo({
-    // 					url:"../login/login"
-    // 				})
-    // 			}
-    // 		},
-    // 	})	
-    // }
-  } };exports.default = _default;
+    } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 /* 17 */
-/*!**********************************************************************************!*\
-  !*** D:/JAVA/web前端/DH生活通/pages/login/login.vue?vue&type=style&index=0&lang=css& ***!
-  \**********************************************************************************/
+/*!***************************************************************************************!*\
+  !*** D:/git远程仓库/dh校园助手/dh-app/pages/login/login.vue?vue&type=style&index=0&lang=css& ***!
+  \***************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -301,9 +302,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 /* 18 */
-/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--6-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-2!./node_modules/postcss-loader/src??ref--6-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!D:/JAVA/web前端/DH生活通/pages/login/login.vue?vue&type=style&index=0&lang=css& ***!
-  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--6-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-2!./node_modules/postcss-loader/src??ref--6-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!D:/git远程仓库/dh校园助手/dh-app/pages/login/login.vue?vue&type=style&index=0&lang=css& ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 

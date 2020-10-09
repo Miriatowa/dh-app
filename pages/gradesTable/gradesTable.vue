@@ -21,7 +21,7 @@
 		onLoad(options) {
 			console.log(options)
 				uni.request({
-					url:"http://127.0.0.1:8000/api/querySchoolGrades",
+					url:"http://58.87.94.58:4000/api/querySchoolGrades",
 					data:{
 						type:parseInt(options.id)
 					},

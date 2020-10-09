@@ -3,7 +3,7 @@
 		<view class="tabbar">
 			<view :class="isTake ? 'isSelect' : 'noSelect'" @click="onToggleTake">代取</view>
 			<view :class="isBuy ? 'isSelect' : 'noSelect'" @click="onToggleBuy">代买</view>
-			<view :class="isGet ? 'isSelect' : 'noSelect'" @click="onToggleGet">代拿</view>
+			<view :class="isGet ? 'isSelect' : 'noSelect'" @click="onToggleGet">代办</view>
 		</view>
 		<view class="mainContent" v-if="isTake">
 			<!-- 代取服务发布 -->
@@ -81,7 +81,7 @@
 </template>
 
 <script>
-	
+	let uid=""
 	export default {
 		data() {
 			return {
@@ -99,8 +99,8 @@
 			    }
 			});
 			uni.request({
-				url:"http://127.0.0.1:8000/api/queryDqfwData",
-				method:"POST",
+				url:"http://58.87.94.58:4000/api/queryDqfwData",
+				method:"GET",
 				data:{
 					type:'代取'
 				},
@@ -116,8 +116,8 @@
 				this.isTake=false
 				this.isGet=false
 				uni.request({
-					url:"http://127.0.0.1:8000/api/queryDqfwData",
-					method:"POST",
+					url:"http://58.87.94.58:4000/api/queryDqfwData",
+					method:"GET",
 					data:{
 						type:'代买'
 					},
@@ -132,8 +132,8 @@
 				this.isTake=true
 				this.isGet=false
 				uni.request({
-					url:"http://127.0.0.1:8000/api/queryDqfwData",
-					method:"POST",
+					url:"http://58.87.94.58:4000/api/queryDqfwData",
+					method:"GET",
 					data:{
 						type:'代取'
 					},
@@ -148,10 +148,10 @@
 				this.isTake=false
 				this.isGet=true
 				uni.request({
-					url:"http://127.0.0.1:8000/api/queryDqfwData",
-					method:"POST",
+					url:"http://58.87.94.58:4000/api/queryDqfwData",
+					method:"GET",
 					data:{
-						type:'代拿'
+						type:'代办'
 					},
 					success: (res) => {
 						console.log(res.data)

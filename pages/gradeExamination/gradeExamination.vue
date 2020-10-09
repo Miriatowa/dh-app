@@ -29,7 +29,7 @@
 		methods: {
 			queryScore(){
 				uni.request({
-					url:"http://127.0.0.1:8000/api/queryGradeExamination",
+					url:"http://58.87.94.58:4000/api/queryGradeExamination",
 					method:"GET",
 					success: (res) => {
 						console.log(res)

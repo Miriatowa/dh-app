@@ -85,8 +85,8 @@
 		},
 		onLoad(){
 			uni.request({
-				url:'http://127.0.0.1:8000/api/queryRepair',
-				method:"POST",
+				url:'http://58.87.94.58:4000/api/queryRepair',
+				method:"GET",
 				data:{
 					houseId:parseInt(this.currentIndex)+1
 				},
@@ -106,8 +106,8 @@
 			bindPickerChange(e){
 				this.currentIndex=e.target.value
 				uni.request({
-					url:'http://127.0.0.1:8000/api/queryRepair',
-					method:"POST",
+					url:'http://58.87.94.58:4000/api/queryRepair',
+					method:"GET",
 					data:{
 						houseId:parseInt(this.currentIndex)+1
 					},

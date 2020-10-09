@@ -100,7 +100,7 @@
 			},
 			// 数据提交
 			bindpccxSubmit(){
-				 var pccx_people="Miraitowa"
+				 var pccx_people=uni.getStorageSync('nickName');
 				 var pccx_time=new Date().toLocaleDateString();
 				 var postdata={
 				 	pccx_people,
@@ -115,7 +115,7 @@
 				 }
 				 console.log(postdata)
 				 uni.request({
-				 	url:"http://127.0.0.1:8000/api/postPccxData",
+				 	url:"http://58.87.94.58:4000/api/postPccxData",
 				 	method:"POST",
 				 	data:postdata,
 				 	success: (res) => {

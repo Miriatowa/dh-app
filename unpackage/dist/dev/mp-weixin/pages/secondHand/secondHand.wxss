@@ -11,8 +11,7 @@
 	background-color: #FFFFFF;
 	height: 80rpx;
 	width: 90%;
-	-webkit-border-radius: 10rpx;
-	        border-radius: 10rpx;
+	border-radius: 10rpx;
 	margin-left: 5%;
 	line-height: 80rpx;
 }
@@ -112,8 +111,7 @@
 .goodsImg{
 	width: 140rpx;
 	height: 140rpx;
-	-webkit-border-radius: 10rpx;
-	        border-radius: 10rpx;
+	border-radius: 10rpx;
 	margin-right: 10rpx;
 	border: 2rpx solid #ccc;
 }

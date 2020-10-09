@@ -182,7 +182,7 @@
 				  promiseArr.push(p)
 				}
 				Promise.all(promiseArr).then((res) => {
-				 var esxz_people="Miraitowa"
+				 var esxz_people=uni.getStorageSync('nickName');
 				 var esxz_time=new Date().toLocaleDateString();
 				 let idStr = Date.now().toString(36)
 				 idStr += Math.random().toString(36).substr(3)
@@ -201,7 +201,7 @@
 				 }
 				 console.log(postdata)
 				 uni.request({
-				 	url:"http://127.0.0.1:8000/api/postEsxzData",
+				 	url:"http://58.87.94.58:4000/api/postEsxzData",
 				 	method:"POST",
 				 	data:postdata,
 				 	success: (res) => {

@@ -75,8 +75,7 @@
   top: -100rpx;
   background-color: #CC9999;
   color: white;
-  -webkit-border-radius: 10rpx;
-          border-radius: 10rpx;
+  border-radius: 10rpx;
 }
 .pub_content .pub_mid {
   border-top: 1px solid #e9e9e9;
@@ -118,8 +117,7 @@
   width: 160rpx;
   text-align: center;
   line-height: 50rpx;
-  -webkit-border-radius: 10rpx;
-          border-radius: 10rpx;
+  border-radius: 10rpx;
   color: #CC9999;
   border: 1px solid #CC9999;
 }

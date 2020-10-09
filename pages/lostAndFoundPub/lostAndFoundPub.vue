@@ -93,7 +93,7 @@
 			},
 			// 数据提交
 			bindswzlSubmit(){
-				 var swzl_people="Miraitowa"
+				 var swzl_people=uni.getStorageSync('nickName');
 				 var swzl_time=new Date().toLocaleDateString();
 				 var postdata={
 				 	swzl_people,
@@ -107,7 +107,7 @@
 				 }
 				 console.log(postdata)
 				 uni.request({
-				 	url:"http://127.0.0.1:8000/api/postSwzlData",
+				 	url:"http://58.87.94.58:4000/api/postSwzlData",
 				 	method:"POST",
 				 	data:postdata,
 				 	success: (res) => {

@@ -12,7 +12,8 @@
 	        <input class="inputCode" name="txtSecretCode" placeholder="验证码"  maxlength='4' @input="onCode"/>
 	        <image :src="codeUrl" class="codeImg"></image>
 	    </view>
-	    <button @getuserinfo="getUseInfo" class="subBtn" type="primary" open-type="getUserInfo">登录</button>
+	    <!-- <button @getuserinfo="getUseInfo" class="subBtn" type="primary" open-type="getUserInfo">登录</button> -->
+		 <button  class="subBtn" type="primary" form-type="submit">登录</button>
 	  </form>
 	</view>
 </template>
@@ -20,12 +21,9 @@
 <script>
 	let userInfo=''
 	let loginCode=''
-	var jwxtId="17101010105"
-	var jwxtPwd="2608782676."
+	var jwxtId=""
+	var jwxtPwd=""
 	var jwxtCode=""
-	// var idNum="17101010105"
-	// var pwd="2608782676."
-	// var code=""
 	export default {
 		data() {
 			return {
@@ -35,8 +33,7 @@
 		onLoad() {
 			let that = this;
 			    uni.request({
-				  // url:"http://58.87.94.58",
-			      url: 'http://127.0.0.1:80/api/getCode',
+			      url: 'http://58.87.94.58:4000/api/getCode',
 			      success:(res)=> {
 					  console.log(res)
 			        that.codeUrl= "data:image/JPG;base64," + res.data
@@ -46,15 +43,44 @@
 		methods: {
 			onIdCard(e){
 				jwxtId=e.detail.value
-				// idNum=e.detail.value
 			},
 			onPassWord(e){
 				jwxtPwd=e.detail.value
-				// pwd=e.detail.value
 			},
 			onCode(e){
 				jwxtCode=e.detail.value
-				// code=e.detail.value
+			},
+			onSubmit(){
+				console.log("111")
+				uni.request({
+				    url: "http://127.0.0.1:4000/api/appLogin",
+				    method: 'POST',
+														 data:{
+															jwxtId,
+															jwxtPwd,
+															jwxtCode,
+														 },							
+				    success: (res) => {
+															if(res.statusCode == 200){
+																uni.switchTab({
+																		url:"../index/index"
+																	})
+																
+																}else{
+																	uni.showModal({
+																		title:"提示",
+																		content:"用户名或者密码错误",
+																		 success: function (res) {
+																		        uni.redirectTo({
+																		        	url:"../login/login"
+																		        })
+																		    }
+																	})			
+																			
+																		}
+				        uni.hideLoading();
+				    }
+				});
 			},
 			// 登录
 				getUseInfo(){
@@ -63,7 +89,10 @@
 				        provider: 'weixin',
 				        success: (res)=> {
 				         userInfo=res.userInfo
-						 console.log(userInfo)
+						 uni.setStorage({
+						     key: 'nickName',
+						     data: userInfo.nickName,
+						 });
 							uni.showLoading({
 							     title: '登录中...'
 							 });
@@ -75,7 +104,7 @@
 									 console.log(loginCode)
 							         //2.将用户登录code传递到后台置换用户SessionKey、OpenId等信息
 							         uni.request({
-							             url: "http://127.0.0.1:80/api/login",
+							             url: "http://58.87.94.58:4000/api/login",
 							             method: 'POST',
 										 data:{
 											jwxtId,
@@ -86,7 +115,6 @@
 											
 										 },							
 							             success: (res) => {
-											console.log(res)
 											if(res.statusCode == 200){
 												uni.setStorage({
 												    key: 'uid',
@@ -118,32 +146,6 @@
 				    	 },
 				    	 })
 				},
-		// 	getUseInfo(){
-		// 		console.log(idNum)
-		// 		console.log(pwd)
-		// 		console.log(code)
-		// 	uni.request({
-		// 		url:"http://127.0.0.1:8000/api/register",
-		// 		method:"POST",
-		// 		data:{
-		// 			idNum,
-		// 			pwd,
-		// 			code,
-		// 		},
-		// 		success: (res) => {
-		// 			if(res.data == "登录成功..."){
-		// 				uni.switchTab({
-		// 					url:"../index/index"
-		// 				})
-		// 			}
-		// 			if(res.data == "登录失败..."){
-		// 				uni.redirectTo({
-		// 					url:"../login/login"
-		// 				})
-		// 			}
-		// 		},
-		// 	})	
-		// }
 		}
 	}
 </script>

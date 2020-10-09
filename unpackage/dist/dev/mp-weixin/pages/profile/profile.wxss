@@ -6,8 +6,7 @@
 .login .login_mes {
   background-color: #CC9999;
   padding-bottom: 100rpx;
-  -webkit-border-radius: 0 0 20% 20%;
-          border-radius: 0 0 20% 20%;
+  border-radius: 0 0 20% 20%;
 }
 .login .login_mes .user_img {
  display: -webkit-box;
@@ -23,8 +22,7 @@
 .login .login_mes .user_img #userAvatarUrl {
   width: 120rpx;
   height: 120rpx;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   overflow: hidden;
   text-align: center;
   margin-left: 30rpx;
@@ -50,21 +48,18 @@
 	width: 94%;
 	margin: -10% 3% 0% 3%;
 	z-index: 99;
-	-webkit-border-radius: 10rpx;
-	        border-radius: 10rpx;
+	border-radius: 10rpx;
 }
 .myOrder{
 	margin: 20rpx auto 0rpx; 
 	background-color: #FFFFFF;
-	-webkit-border-radius: 10rpx;
-	        border-radius: 10rpx;
+	border-radius: 10rpx;
 	width: 94%;
 }
 .mySev{
 	margin: 20rpx auto 0rpx; 
 	background-color: #FFFFFF;
-	-webkit-border-radius: 10rpx;
-	        border-radius: 10rpx;
+	border-radius: 10rpx;
 	width: 94%;
 }
 .myOrderList{

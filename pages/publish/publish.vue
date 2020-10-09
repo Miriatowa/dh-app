@@ -97,8 +97,8 @@
 		},
 		onLoad() {
 				uni.request({
-					url:'http://127.0.0.1:8000/api/querySwzlData',
-					method:"POST",
+					url:'http://58.87.94.58:4000/api/querySwzlData',
+					method:"GET",
 					data:{
 						publishType:"寻物启事"
 					},

@@ -55,8 +55,8 @@
 				success: (res) => {
 					this.uid=res.data
 					uni.request({
-						url:'http://127.0.0.1:8000/api/queryMyZfhzData',
-						method:"POST",
+						url:'http://58.87.94.58:4000/api/queryMyZfhzData',
+						method:"GET",
 						data:{
 							userId:this.uid
 						},
@@ -113,7 +113,7 @@
 			onCancelCollection(){
 				console.log(this.cancelId)
 				uni.request({
-					url:"http://127.0.0.1:8000/api/deleteMyZfhzData",
+					url:"http://58.87.94.58:4000/api/deleteMyZfhzData",
 					method:"POST",
 					data:{
 						userId: this.uid,

@@ -13,8 +13,7 @@
   margin: 25rpx auto;
   height: 300rpx;
   border: 1px solid #F1F1F1;
-  -webkit-border-radius: 10rpx;
-          border-radius: 10rpx;
+  border-radius: 10rpx;
   padding-left: 10rpx;
   padding-top: 10rpx;
   background-color: #fff;

@@ -76,8 +76,8 @@
 			console.log(options)
 			this.goodsId=options.id
 			uni.request({
-				url:'http://127.0.0.1:8000/api/queryEsxzDetail',
-				method:"POST",
+				url:'http://58.87.94.58:4000/api/queryEsxzDetail',
+				method:"GET",
 				data:{
 					goodsId:this.goodsId
 				},
@@ -94,8 +94,8 @@
 				    key: 'uid',
 				    success: (res)=> {
 						uni.request({
-							url:'http://127.0.0.1:8000/api/postMyEsxzCollectionData',
-							method:"POST",
+							url:'http://58.87.94.58:4000/api/postMyEsxzCollectionData',
+							method:"GET",
 							data:{
 								collectionId:this.goodArray[0].id,
 								uid:res.data,

@@ -18,8 +18,7 @@
           flex: 1;
   height: 68rpx;
   font-size: 28rpx;
-  -webkit-border-radius: 16rpx;
-          border-radius: 16rpx;
+  border-radius: 16rpx;
   background-color: #f5f5f5;
   padding-left: 60rpx;
 }

@@ -19,8 +19,7 @@ swiper-item{
 swiper-item image{
 	height: 250rpx;
 	width: 100%;
-	-webkit-border-radius: 16rpx;
-	        border-radius: 16rpx;
+	border-radius: 16rpx;
 }
 .title{
 	margin: 20rpx;

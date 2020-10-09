@@ -41,8 +41,7 @@
 .item{
 	background-color: #FFFFFF;
 	width: 360rpx;
-	-webkit-border-radius: 14rpx;
-	        border-radius: 14rpx;
+	border-radius: 14rpx;
 	margin-top: 10rpx;
 }
 .goodsItem{
@@ -52,8 +51,7 @@
 	margin-top: 20rpx;
 	width: 320rpx;
 	height: 320rpx;
-	-webkit-border-radius: 20rpx;
-	        border-radius: 20rpx;
+	border-radius: 20rpx;
 }
 .content{
 	-webkit-box-flex: 1;

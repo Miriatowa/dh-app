@@ -66,8 +66,8 @@
 		},
 		onLoad() {
 			uni.request({
-				url:'http://127.0.0.1:8000/api/queryZfhzData',
-				method:"POST",
+				url:'http://58.87.94.58:4000/api/queryZfhzData',
+				method:"GET",
 				data:{
 					publishType:"租房"
 				},
@@ -83,8 +83,8 @@
 				this.isLost=true
 				this.isFound=false
 				uni.request({
-					url:'http://127.0.0.1:8000/api/queryZfhzData',
-					method:"POST",
+					url:'http://58.87.94.58:4000/api/queryZfhzData',
+					method:"GET",
 					data:{
 						publishType:"出租"
 					},
@@ -99,8 +99,8 @@
 				this.isLost=false
 				this.isFound=true
 				uni.request({
-					url:'http://127.0.0.1:8000/api/queryZfhzData',
-					method:"POST",
+					url:'http://58.87.94.58:4000/api/queryZfhzData',
+					method:"GET",
 					data:{
 						publishType:"租房"
 					},

@@ -89,8 +89,7 @@
 .goodsImg{
 	width: 140rpx;
 	height: 140rpx;
-	-webkit-border-radius: 10rpx;
-	        border-radius: 10rpx;
+	border-radius: 10rpx;
 	margin-right: 10rpx;
 	border: 2rpx solid #ccc;
 }

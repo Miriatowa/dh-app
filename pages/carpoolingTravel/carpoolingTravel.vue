@@ -111,8 +111,8 @@
 		},
 		onLoad(){
 			uni.request({
-				url:'http://127.0.0.1:8000/api/queryPccxData',
-				method:"POST",
+				url:'http://58.87.94.58:4000/api/queryPccxData',
+				method:"GET",
 				data:{
 					pccxType:"找拼友"
 				},
@@ -128,8 +128,8 @@
 				this.isLost=true
 				this.isFound=false
 				uni.request({
-					url:'http://127.0.0.1:8000/api/queryPccxData',
-					method:"POST",
+					url:'http://58.87.94.58:4000/api/queryPccxData',
+					method:"GET",
 					data:{
 						pccxType:"车找人"
 					},
@@ -144,8 +144,8 @@
 				this.isLost=false
 				this.isFound=true
 				uni.request({
-					url:'http://127.0.0.1:8000/api/queryPccxData',
-					method:"POST",
+					url:'http://58.87.94.58:4000/api/queryPccxData',
+					method:"GET",
 					data:{
 						pccxType:"找拼友"
 					},

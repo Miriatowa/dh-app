@@ -57,6 +57,14 @@
 				buttonLoading: false,
 			}
 		},
+		onLoad() {
+			uni.getStorage({
+			    key: 'uid',
+			    success: function (res) {
+			        uid=res.data;
+			    }
+			});
+		},
 		methods: {
 			// 酬劳
 			onGoodDPrice(e){
@@ -70,12 +78,6 @@
 			onAimPlace(e){
 				dqfw_aimPlace= e.detail.value
 			},
-			// 发布人数据获取
-			// getdqfwPeople(e){
-			//     uni.getStorage({
-			    	
-			//     })
-			// },
 			// 商品描述
 			onGoodDes(e){
 				dqfw_des=e.detail.value
@@ -98,7 +100,7 @@
 			},
 			// 数据提交
 			binddqfwSubmit(){
-				 var dqfw_people="Miraitowa"
+				 var dqfw_people=uni.getStorageSync('nickName');
 				 var dqfw_time=new Date().toLocaleString();;
 				 var postdata={
 				 	dqfw_people,
@@ -113,8 +115,9 @@
 				 	uid,
 				 }
 				 console.log(postdata)
+				 
 				 uni.request({
-				 	url:"http://127.0.0.1:8000/api/postDqfwData",
+				 	url:"http://58.87.94.58:4000/api/postDqfwData",
 				 	method:"POST",
 				 	data:postdata,
 				 	success: (res) => {

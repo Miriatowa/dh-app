@@ -47,8 +47,7 @@
 	line-height: 60rpx;
 	font-size: 28rpx;
 	padding:4rpx 20rpx;
-	-webkit-border-radius: 6rpx;
-	        border-radius: 6rpx;
+	border-radius: 6rpx;
 	background-color: #FBEFF8;
 	color: #CC9999;
 	font-weight: 600
@@ -85,8 +84,7 @@
 	color: #FFFFFF;
 	padding: 5rpx 10rpx;
 	font-size: 26rpx;
-	-webkit-border-radius: 50%;
-	        border-radius: 50%;
+	border-radius: 50%;
 	margin-right: 10rpx;
 }
 .aimTitle{
@@ -94,8 +92,7 @@
 	padding: 5rpx 10rpx;
 	font-size: 26rpx;
 	color: #FFFFFF;
-	-webkit-border-radius: 50%;
-	        border-radius: 50%;
+	border-radius: 50%;
 	margin-right: 10rpx;
 }
 .itemBot{

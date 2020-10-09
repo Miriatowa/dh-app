@@ -59,8 +59,8 @@
 		},
 		onLoad(){
 					uni.request({
-						url:'http://127.0.0.1:8000/api/querySwzlData',
-						method:"POST",
+						url:'http://58.87.94.58:4000/api/querySwzlData',
+						method:"GET",
 						data:{
 							publishType:"寻物启事"
 						},
@@ -77,8 +77,25 @@
 				this.isLost=true
 				this.isFound=false
 				uni.request({
-					url:'http://127.0.0.1:8000/api/querySwzlData',
-					method:"POST",
+					url:'http://58.87.94.58:4000/api/querySwzlData',
+					method:"GET",
+					data:{
+						publishType:"招领启事"
+					},
+					success:(res)=> {
+						console.log(res)
+						this.zlArr=res.data
+					
+					}
+					
+				})
+			},
+			onToggleFound(){
+				this.isLost=false
+				this.isFound=true
+				uni.request({
+					url:'http://58.87.94.58:4000/api/querySwzlData',
+					method:"GET",
 					data:{
 						publishType:"寻物启事"
 					},
@@ -88,26 +105,9 @@
 					}
 					
 				})
-			},
-			onToggleFound(){
-				this.isLost=false
-				this.isFound=true
-				uni.request({
-					url:'http://127.0.0.1:8000/api/querySwzlData',
-					method:"POST",
-					data:{
-						publishType:"招领启事"
-					},
-					success:(res)=> {
-						console.log(res)
-						this.zlArr=res.data
-						
-					}
-					
-				})
+				
 			},
 			toPublish(){
-				console.log("111")
 				uni.navigateTo({
 					url:"../lostAndFoundPub/lostAndFoundPub"
 				})

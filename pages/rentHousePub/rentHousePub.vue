@@ -88,13 +88,6 @@
 			});
 		},
 		methods: {
-			// 发布人数据获取
-			getzfhzPeople: function(e){
-			  var that = this;
-			  that.setData({
-			    zfhz_people: that.data.nickName
-			  })
-			},
 			//标题
 			onGoodTitle(e){
 			    zfhz_name= e.detail.value
@@ -190,7 +183,7 @@
 				  promiseArr.push(p)
 				}
 				Promise.all(promiseArr).then((res) => {
-				 var zfhz_people="Miraitowa"
+				 var zfhz_people=uni.getStorageSync('nickName');
 				 var zfhz_time=new Date().toLocaleDateString();
 				 var postdata={
 				 	zfhz_people,
@@ -207,7 +200,7 @@
 				 }
 				 console.log(postdata)
 				 uni.request({
-				 	url:"http://127.0.0.1:8000/api/postZfhzData",
+				 	url:"http://58.87.94.58:4000/api/postZfhzData",
 				 	method:"POST",
 				 	data:postdata,
 				 	success: (res) => {
