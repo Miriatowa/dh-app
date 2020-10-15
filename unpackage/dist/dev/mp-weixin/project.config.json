@@ -22,7 +22,7 @@
     "uploadWithSourceMap": true,
     "compileHotReLoad": false,
     "useMultiFrameRuntime": false,
-    "useApiHook": false,
+    "useApiHook": true,
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],
@@ -37,7 +37,7 @@
   "compileType": "miniprogram",
   "libVersion": "",
   "appid": "wx41a8af9e1bc50cd5",
-  "projectname": "DH生活助手",
+  "projectname": "DH校园助手",
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
   "condition": {
@@ -49,28 +49,13 @@
       "current": -1,
       "list": []
     },
-    "plugin": {
-      "current": -1,
-      "list": []
-    },
     "game": {
-      "current": -1,
-      "list": []
-    },
-    "gamePlugin": {
       "current": -1,
       "list": []
     },
     "miniprogram": {
       "current": -1,
-      "list": [
-        {
-          "id": -1,
-          "name": "pages/index/index",
-          "pathName": "pages/index/index",
-          "scene": null
-        }
-      ]
+      "list": []
     }
   }
 }

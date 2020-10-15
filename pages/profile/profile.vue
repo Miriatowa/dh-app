@@ -1,15 +1,14 @@
 <template>
 		<view class="login">
 		<view class="login_mes">
-		  <view class='user_img' >
+		 <!-- <view class='user_img' >
 		   <open-data type="userAvatarUrl" id="userAvatarUrl"></open-data>
 		   <open-data type="userNickName" class="userNickName"></open-data>
-		   </view>
-		 <!-- <view class='user_img' v-if="!isLogin">
-			   <image src="https://ae01.alicdn.com/kf/Ha00e12c5c2ad41ccac9375a0e1cfe344T.jpg" id="userAvatarUrl"></image>
-		      
-			  <button  @click="toLogin" class="my_login" type="warn">前往登录</button>
-		     </view> -->
+		   </view> -->
+		 <view class='user_img' >
+			   <image src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-miraitowa/2ab5c930-0912-11eb-81ea-f115fe74321c.jpg" id="userAvatarUrl" @click="changeAva"></image>
+		      <view class="my_login">Oaa859367376</view>
+		     </view>
 		  
 		</view>
 		<view class="profileCollection">
@@ -117,11 +116,14 @@
 			// 	});
 		},
 		methods: {
-			toLogin(){
-				uni.navigateTo({
-					url:"../login/login"
-				})
+			changeAva(){
+				
 			},
+			// toLogin(){
+			// 	uni.navigateTo({
+			// 		url:"../login/login"
+			// 	})
+			// },
 			// 跳转到我的订单
 			toAllOrder(){
 				uni.navigateTo({
@@ -156,7 +158,7 @@
 	}
 	.login .login_mes .user_img {
 	 display: flex;
-	 justify-content: center;
+	 /* justify-content: center; */
 	  align-items: center;
 	}
 	.login .login_mes .user_img #userAvatarUrl {
@@ -169,7 +171,6 @@
 	  margin-top: 20rpx;
 	}
 	.login .login_mes .user_img .userNickName {
-	  flex: 1;
 	  font-size: 30rpx;
 	  font-weight: bold;
 	  color: black;
@@ -178,8 +179,9 @@
 	}
 	.login .login_mes .user_img .my_login {
 	  font-size: 33rpx;
-	  margin-right: 350rpx;
 	  margin-top: 30rpx;
+	  margin-left: 20rpx;
+	  font-weight: bold;
 	}
 	.profileCollection{
 		background-color: #FFFFFF;

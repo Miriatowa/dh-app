@@ -12,7 +12,6 @@
 	        <input class="inputCode" name="txtSecretCode" placeholder="验证码"  maxlength='4' @input="onCode"/>
 	        <image :src="codeUrl" class="codeImg"></image>
 	    </view>
-	    <!-- <button @getuserinfo="getUseInfo" class="subBtn" type="primary" open-type="getUserInfo">登录</button> -->
 		 <button  class="subBtn" type="primary" form-type="submit">登录</button>
 	  </form>
 	</view>
@@ -33,7 +32,8 @@
 		onLoad() {
 			let that = this;
 			    uni.request({
-			      url: 'http://58.87.94.58:4000/api/getCode',
+			      // url: 'http://58.87.94.58:4000/api/getCode',
+				  url: "http://127.0.0.1:4000/api/getCode",
 			      success:(res)=> {
 					  console.log(res)
 			        that.codeUrl= "data:image/JPG;base64," + res.data
@@ -51,9 +51,9 @@
 				jwxtCode=e.detail.value
 			},
 			onSubmit(){
-				console.log("111")
 				uni.request({
-				    url: "http://127.0.0.1:4000/api/appLogin",
+				    // url: "http://58.87.94.58:4000/api/appLogin",
+					url: "http://127.0.0.1:4000/api/appLogin",
 				    method: 'POST',
 														 data:{
 															jwxtId,
@@ -62,9 +62,15 @@
 														 },							
 				    success: (res) => {
 															if(res.statusCode == 200){
-																uni.switchTab({
-																		url:"../index/index"
-																	})
+																uni.setStorage({
+																		    key: 'uid',
+																		    data: res.data[0].userId,
+																		    success: function () {
+																		        uni.switchTab({
+																		        		url:"../index/index"
+																		        	})
+																		    }
+																		});										  
 																
 																}else{
 																	uni.showModal({
@@ -82,70 +88,6 @@
 				    }
 				});
 			},
-			// 登录
-				getUseInfo(){
-					let _this = this;
-				    uni.getUserInfo({
-				        provider: 'weixin',
-				        success: (res)=> {
-				         userInfo=res.userInfo
-						 uni.setStorage({
-						     key: 'nickName',
-						     data: userInfo.nickName,
-						 });
-							uni.showLoading({
-							     title: '登录中...'
-							 });
-							// 1.wx获取登录用户code
-							 uni.login({
-							     provider: 'weixin',
-							     success: function(res) {
-							         loginCode = res.code;
-									 console.log(loginCode)
-							         //2.将用户登录code传递到后台置换用户SessionKey、OpenId等信息
-							         uni.request({
-							             url: "http://58.87.94.58:4000/api/login",
-							             method: 'POST',
-										 data:{
-											jwxtId,
-											jwxtPwd,
-											jwxtCode,
-										 	info:userInfo,
-										 	code:loginCode,
-											
-										 },							
-							             success: (res) => {
-											if(res.statusCode == 200){
-												uni.setStorage({
-												    key: 'uid',
-												    data: res.data[0].openid,
-												    success: function () {
-												        uni.switchTab({
-												        		url:"../index/index"
-												        	})
-												    }
-												});
-												
-												}else{
-													uni.showModal({
-														title:"提示",
-														content:"用户名或者密码错误",
-														 success: function (res) {
-														        uni.redirectTo({
-														        	url:"../login/login"
-														        })
-														    }
-													})			
-															
-														}
-							                 uni.hideLoading();
-							             }
-							         });
-							     },
-							 });
-				    	 },
-				    	 })
-				},
 		}
 	}
 </script>
